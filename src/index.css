@@ -1,0 +1,154 @@
+*{
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+body{
+  width: 100%;
+  height: 100vh;
+  background: linear-gradient(180deg, #B068E9 0%, #6463E7 100%);
+  display: flex;
+  align-items: center;
+  justify-content: center;
+}
+.container{
+  display: flex;
+  align-items: center;
+  flex-direction: column;
+  width: 327px;
+  background-color: white;
+  border-radius: 23px;
+  position: relative;
+}
+.img-div{
+  width: 240px;
+  height: 108px;
+}
+.first-img{
+  position: absolute;
+  left: 4%;
+  top: -23%;
+}
+.text-div{
+  display: flex;
+  flex-direction: column;
+  padding-left: 25px;
+  padding-right: 25px;
+  padding-bottom: 34px;
+}
+.information{
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  flex-direction: column;
+  margin-bottom: 18px;
+  text-align: start;
+}
+.hidden{
+  display: block;
+  
+}
+.question{
+  display: flex;
+  align-items: center;
+  gap: 15px;
+}
+.first-p{
+  color: #4B4C5F;
+  font-family: "Kumbh Sans";
+  font-size: 13px;
+  font-style: normal;
+  font-weight: 400;
+  line-height: normal;
+  width: 235px;
+  cursor: pointer;
+}
+.hidden{
+  color: #787887;
+  font-family: "Kumbh Sans"; 
+  font-size: 12px; 
+  font-style: normal;
+  font-weight: 400;
+  line-height: 18px; /* 150% */
+  margin-top: 13px;
+  padding-left: 10px;
+  width: 100%;
+}
+.faq{
+  color: #1E1F36;
+  font-family: "Kumbh Sans";
+  font-size: 32px;
+  font-style: normal;
+  font-weight: 700;
+  line-height: normal;
+  align-self: center;
+  margin-bottom: 38px;
+  margin-top: 18px;
+}
+hr{
+  width: 100%;
+  height: 2px;
+  background-color: #4B4C5F;
+  margin-bottom: 8px;
+}
+.desktop-img{
+  display: none;
+}
+.shadow-desktop{
+  display: none;
+}
+.box{
+  display: none;
+}
+.dark{
+  color: black;
+
+.grey{
+  color: #4B4C5F;
+}}
+@media(width>=1024px){
+  .container{
+    flex-direction: row;
+    width: 920px;
+    height: 509px;
+    gap: 258px;
+  }
+  .desktop-img{
+    display: block;
+    margin-left: -1px;
+    position: absolute;
+    top: 15%;
+  }
+  .first-img{
+    display: none;
+  }
+  .text-div{
+    display: flex;
+    flex-direction: column;
+    padding-left: 25px;
+    padding-right: 25px;
+    padding-bottom: 34px;
+  }
+  .question{
+    gap: 77px;
+  }
+  .first-p{
+    font-size: 17px;
+    width: 270px;
+  }
+  .hidden{
+    font-size: 14px;
+    width: 350px;
+  }
+  .shadow-desktop{
+    display: block;
+    position: absolute;
+    top: 4%;
+  }
+  .box{
+    display: block;
+    position: absolute;
+    top: 40%;
+    left: -11%;
+  }
+}
